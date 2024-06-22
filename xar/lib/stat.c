@@ -42,6 +42,9 @@
 
 #define _FILE_OFFSET_BITS 64
 
+#define __USE_XOPEN // For `strptime`
+#define _GNU_SOURCE // For `strptime`
+
 #include "config.h"
 #ifndef HAVE_ASPRINTF
 #include "asprintf.h"

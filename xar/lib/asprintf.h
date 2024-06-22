@@ -34,6 +34,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+#if !defined(_GNU_SOURCE) && !defined(__USE_XOPEN)
+
 static inline int
 vasprintf(char **rResult, const char *aFormat, va_list aAp)
 {
@@ -90,3 +92,5 @@ asprintf(char **rResult, const char *aFormat, ...)
 
     return rVal;
 }
+
+#endif

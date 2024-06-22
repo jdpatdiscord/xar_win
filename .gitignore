@@ -32,3 +32,5 @@
 /xar/lib/*.la
 /xar/src/ixar
 /xar/src/xar
+
+build
