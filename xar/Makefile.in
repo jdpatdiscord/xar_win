@@ -25,7 +25,7 @@ AUTOCONF := @AUTOCONF@
 CPPFLAGS := @CPPFLAGS@
 CFLAGS := @CFLAGS@ 
 A_CFLAGS := $(CFLAGS) 
-S_CFLAGS := $(CFLAGS) -fPIC -DPIC
+S_CFLAGS := $(CFLAGS)
 ifeq (macho, @abi@)
 S_CFLAGS += -dynamic
 endif
